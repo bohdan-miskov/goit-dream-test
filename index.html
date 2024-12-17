@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/goit-dream-test/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-dream-test/assets/styles-D5Yy1iqW.css">
+    <link rel="stylesheet" crossorigin href="/goit-dream-test/assets/styles-FXUm3FJn.css">
   </head>
   <body class="body">
     <header>
@@ -80,6 +80,7 @@
 
       <section class="how-it-works-section" id="how-it-works">
   <div class="container">
+    <h2 class="visually-hidden">How it works</h2>
     <div class="how-it-works-for-flex">
       <div class="how-it-works-wrapper">
         <picture>
@@ -101,14 +102,15 @@
             width="335"
             height="452"
             class="how-it-works-image"
+            loading="lazy"
           />
         </picture>
       </div>
       <div class="how-it-works-all-text">
-        <h2 class="how-it-works-title">
+        <p class="how-it-works-title">
           To order your <span class="how-it-works-span">vegetable</span> basket,
           simply follow these <span class="how-it-works-span">easy steps</span>
-        </h2>
+        </p>
         <p class="how-it-works-text">
           Our baskets are assembled with care and delivered straight to your
           doorstep, so you can enjoy the taste of fresh fruit without ever
@@ -185,6 +187,7 @@
             alt="picture of eggplant"
             width="280"
             height="240"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -210,6 +213,7 @@
             alt="picture of leek"
             width="280"
             height="240"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -235,6 +239,7 @@
             alt="picture of mushrooms"
             width="280"
             height="240"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -260,6 +265,7 @@
             alt="picture of corn"
             width="280"
             height="240"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -285,6 +291,7 @@
             alt="picture of sweet potatoes"
             width="280"
             height="240"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -310,6 +317,7 @@
             alt="picture of carrot"
             width="280"
             height="240"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -331,6 +339,7 @@
                     class="reviews-item-image" 
                     width="56" 
                     height="56"
+                    loading="lazy"
                     >
                     <h3 class="reviews-subtitle">John Wax</h3>
                     <p class="reviews-item-text">These vegetables are my secret to delicious and healthy meals. The quality is always at the highest level, the aroma and taste are enchanting. I advise every fan of real products!</p>
@@ -343,6 +352,7 @@
                     class="reviews-item-image" 
                     width="56" 
                     height="56"
+                    loading="lazy"
                     >
                     <h3 class="reviews-subtitle">Victoria Romashenko</h3>
                     <p class="reviews-item-text">I love how fast and fresh the vegetables are delivered. Salads always turn out so appetizing, and soups are real masterpieces. The quality is impeccable!</p>
@@ -355,6 +365,7 @@
                     class="reviews-item-image" 
                     width="56" 
                     height="56"
+                    loading="lazy"
                     >
                     <h3 class="reviews-subtitle">Ihor Trachuk</h3>
                     <p class="reviews-item-text">Recently tried my fresh tomatoes and peppers - amazing! The authenticity of the taste, as if from the garden directly &nbsp;to my table. It is now my main vegetable supplier.</p>
@@ -367,9 +378,10 @@
       <!-- Секція Fresh Harvest Box -->
 <section class="your-order" id="shopNow">
   <div class="container">
-    <h2 class="order-title">
+    <h2 class="visually-hidden">Your order</h2>
+    <p class="order-title">
       Fresh <span class="pink-span">Harvest</span> Box has got you covered
-    </h2>
+    </p>
     <p class="order-text">
       Our boxes are packed with delicious, nutritious vegetables, perfect for
       anyone looking to eat healthier or support local farmers. Order your box
@@ -385,19 +397,21 @@
         </h3>
         <form>
           <input
-            class="order-name"
+            class="order-input"
             type="text"
             name="user-name"
             placeholder="Full Name"
+            aria-label="Enter your name"
             required
           />
 
           <input
-            class="order-email"
+            class="order-input"
             type="email"
             name="user-email"
             placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            aria-label="Enter your email"
             required
           />
 
@@ -405,6 +419,7 @@
             class="order-comment"
             name="user-comment"
             placeholder="Comment"
+            aria-label="Enter your comment"
           ></textarea>
 
           <button class="order-form-button" type="submit">SEND</button>
@@ -432,11 +447,12 @@
             alt="A woman squeezes lemon juice into her drink"
             width="295"
             height="272"
+            loading="lazy"
           />
         </picture>
         <p class="order-social-text">Follow us on our social networks:</p>
         <ul class="order-social-links">
-          <li>
+          <li class="order-social-item">
             <a
               class="order-social-link"
               target="_blank"
@@ -444,8 +460,7 @@
               >INSTAGRAM</a
             >
           </li>
-          <li><p class="order-social-link">/</p></li>
-          <li>
+          <li class="order-social-item">
             <a
               class="order-social-link"
               target="_blank"
@@ -453,8 +468,7 @@
               >FACEBOOK</a
             >
           </li>
-          <li><p class="order-social-link">/</p></li>
-          <li>
+          <li class="order-social-item">
             <a
               class="order-social-link"
               target="_blank"
@@ -505,29 +519,30 @@
             <a href="tel:+380684439426">+380 (68) 443-94-26</a>
           </li>
           <li class="footer-contacts-item">
-            1678 S. Pioneer Road Salt Lake City UT 84104
+            <a
+              class="footer-contacts-link"
+              target="_blank"
+              href="https://www.google.com.ua/maps/place/Varex+Imaging+Visitor+Entrance/@40.7332053,-111.9617062,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35bbcfb1369:0x260ab4842496c9e4!8m2!3d40.7332053!4d-111.9591313!16s%2Fg%2F1tcxvqmt?hl=ru&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            >
+              1678 S. Pioneer Road Salt Lake City UT 84104
+            </a>
           </li>
         </ul>
       </div>
     </div>
-    <ul class="footer-policy-list">
-      <li class="footer-policy-item">
-        <ul class="footer-privacy-list">
-          <li>
-            <a href="../index.html" class="footer-privacy-link">
-              Privacy Policy
-            </a>
-          </li>
-          <li>&sol;</li>
-          <li>
-            <a href="../index.html" class="footer-privacy-link">
-              Cookie settings
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="footer-policy-item">&copy;Green Harvest 2023</li>
-    </ul>
+    <div class="footer-policy-list">
+      <ul class="footer-privacy-list">
+        <li class="footer-privacy-item">
+          <a href="/index.html" class="footer-privacy-link"> Privacy Policy </a>
+        </li>
+        <li>
+          <a href="/index.html" class="footer-privacy-link">
+            Cookie settings
+          </a>
+        </li>
+      </ul>
+      <p class="footer-policy-item">&copy;Green Harvest 2023</p>
+    </div>
   </div>
 </footer>
 
