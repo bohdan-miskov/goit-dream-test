@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-dream-test/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenHarvest_group6</title>
+    <meta
+      name="description"
+      content="Fresh Harvest Box delivers curated baskets of high-quality, fresh vegetables directly to your doorstep. Enjoy healthy eating made easy with our simple ordering process and exceptional customer reviews."
+    />
+    <title>GreenHarvest</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -19,15 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <script type="module" crossorigin src="/goit-dream-test/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-dream-test/assets/styles-Bpr3Mq6Z.css">
+    <script async type="module" crossorigin src="/goit-dream-test/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/goit-dream-test/assets/styles-D5Yy1iqW.css">
   </head>
   <body class="body">
     <header>
   <div class="container header-container">
     <nav class="navigation">
-      <a class="logo-link" href="index.html">
+      <a class="logo-link" href="index.html" aria-label="Go to homepage">
         <svg class="logo-icon">
           <use href="/goit-dream-test/assets/sprite-DPvE4Nhq.svg#icon-logo"></use>
         </svg>
@@ -46,11 +49,14 @@
       </ul>
     </nav>
 
-    <a class="buy-button" href="#shopNow">
-      <button type="button" class="button-text">shop now</button>
-    </a>
+    <a class="buy-button button-text" href="#shopNow"> shop now </a>
 
-    <button class="menu-btn" type="button" data-mobileMenu-open>
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="Open menu"
+      data-mobileMenu-open
+    >
       <svg class="menu-icon">
         <use href="/goit-dream-test/assets/sprite-DPvE4Nhq.svg#icon-mobile-menu"></use>
       </svg>
@@ -72,187 +78,244 @@
   </div>
 </section>
 
-      <section id="how-it-works">
-  <picture>
-    <source
-      media="(min-width: 1158px)"
-      srcset="/goit-dream-test/assets/imagehiw-desk@1x-CKEKxKmc.jpg 1x, /goit-dream-test/assets/imagehiw-desk@2x-BENqgjmk.jpg 2x"
-    />
-    <source
-      media="(min-width: 768px)"
-      srcset="/goit-dream-test/assets/imagehiw-tab@1x-DtvwLymV.jpg 1x, /goit-dream-test/assets/imagehiw-tab@2x-_6U7NFsl.jpg 2x"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="/goit-dream-test/assets/imagehiw-mob@1x-Cuo31bqy.jpg 1x, /goit-dream-test/assets/imagehiw-mob@2x-CmKS3e-D.jpg 2x"
-    />
-    <img
-      src="/goit-dream-test/assets/imagehiw-mob@1x-Cuo31bqy.jpg"
-      alt="image how it works"
-      width="640"
-      height="640"
-      class="how-it-works-image"
-    />
-  </picture>
-  <h2 class="how-it-works-title">
-    To order your vegetable basket, simply follow these easy steps
-  </h2>
-  <p class="how-it-works-text">
-    Our baskets are assembled with care and delivered straight to your doorstep,
-    so you can enjoy the taste of fresh fruit without ever leaving your home.
-  </p>
-  <ul class="how-it-works-list">
-    <li class="how-it-works-item">
-      Just choose the vegetable you want to order by clicking on the checkboxes
-      next to it.
-    </li>
-    <li class="how-it-works-item">
-      Click on the basket and fill out the form.
-    </li>
-    <li class="how-it-works-item">
-      Sit back and relax! Your fresh vegetables basket will be delivered.
-    </li>
-  </ul>
+      <section class="how-it-works-section" id="how-it-works">
+  <div class="container">
+    <div class="how-it-works-for-flex">
+      <div class="how-it-works-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/goit-dream-test/assets/imagehiw-desk@1x-CcCrDkC-.webp 1x, /goit-dream-test/assets/imagehiw-desk@2x-BcOkcMaP.webp 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/goit-dream-test/assets/imagehiw-tab@1x-e6-wtaJq.webp 1x, /goit-dream-test/assets/imagehiw-tab@2x-FqI5bitq.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/goit-dream-test/assets/imagehiw-mob@1x-Cr8hUrVv.webp 1x, /goit-dream-test/assets/imagehiw-mob@2x-byrZdjcn.webp 2x"
+          />
+          <img
+            src="/goit-dream-test/assets/imagehiw-desk@1x-CcCrDkC-.webp"
+            alt="image how it works"
+            width="335"
+            height="452"
+            class="how-it-works-image"
+          />
+        </picture>
+      </div>
+      <div class="how-it-works-all-text">
+        <h2 class="how-it-works-title">
+          To order your <span class="how-it-works-span">vegetable</span> basket,
+          simply follow these <span class="how-it-works-span">easy steps</span>
+        </h2>
+        <p class="how-it-works-text">
+          Our baskets are assembled with care and delivered straight to your
+          doorstep, so you can enjoy the taste of fresh fruit without ever
+          leaving your home.
+        </p>
+        <ol class="how-it-works-list">
+          <li class="how-it-works-item">
+            <div class="how-it-works-item-text">
+              Just choose
+              <span class="how-it-works-span-li">the vegetable</span>
+              you want to order by clicking on the checkboxes
+              <span class="how-it-works-span-li">next to it.</span>
+            </div>
+          </li>
+          <li class="how-it-works-item">
+            <div class="how-it-works-item-text">
+              Click on <span class="how-it-works-span-li">the basket</span> and
+              fill out the form.
+            </div>
+          </li>
+          <li class="how-it-works-item">
+            <div class="how-it-works-item-text">
+              Sit back and relax! Your
+              <span class="how-it-works-span-li">fresh vegetables</span> basket
+              will be delivered.
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
 </section>
 
       <div class="advertisement-section">
-<div class="container">
+  <div class="container">
     <h2 class="visually-hidden">Advertisement</h2>
-    <p class="advertisement-text"> <span class="advertisement-accent">
-            Discount up to 40%!
-        </span>
-        Taste the vitamins and keep your health
+    <p class="advertisement-text">
+      <span class="advertisement-accent"> Discount up to 40%! </span>
+      Taste the vitamins and keep your health
     </p>
+  </div>
 </div>
-</div>
+
       <section class="vegetables-section" id="vegetables">
-    <div class="container container-vegetables">
-      <h2 class="vegetables-title">Organic <span class="vegetables-span">vegetables</span></h2>
-     <p class="vegetables-text">Our organic vegetables are hand-picked from local farms and delivered straight to your doorstep, ensuring that you get the freshest and most nutritious produce possible.</p>
-     <ul class="vegetables-list">
-        <li class="vegetables-list-item">
-            <h3 class="vegetables-subtitle">eggplant</h3>
-            <p class="vegetables-list-text">60 USD / kg</p>
-            <picture>
-                <!-- Desktop -->
-                <source media="(min-width:1280px)"
-                srcset="/goit-dream-test/assets/eggplant-desktop-Dj12z4Wf.webp 1x, /goit-dream-test/assets/eggplant-desktop@2x-aqpPGxho.webp 2x"
-                >
+  <div class="container container-vegetables">
+    <h2 class="vegetables-title">
+      Organic <span class="vegetables-span">vegetables</span>
+    </h2>
+    <p class="vegetables-text">
+      Our organic vegetables are hand-picked from local farms and delivered
+      straight to your doorstep, ensuring that you get the freshest and most
+      nutritious produce possible.
+    </p>
+    <ul class="vegetables-list">
+      <li class="vegetables-list-item">
+        <h3 class="vegetables-subtitle">eggplant</h3>
+        <p class="vegetables-list-text">60 USD / kg</p>
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="/goit-dream-test/assets/eggplant-desktop-Dj12z4Wf.webp 1x, /goit-dream-test/assets/eggplant-desktop@2x-aqpPGxho.webp 2x"
+          />
 
-                <!-- Tablet -->
-                <source media="(min-width:768px)"
-                srcset="/goit-dream-test/assets/eggplant-tablet-DaW973rB.webp 1x, /goit-dream-test/assets/eggplant-tablet@2x-Cq7aq26M.webp 2x">
-                 
-                <img 
-                srcset="/goit-dream-test/assets/eggplant-mobile-CeMgVp2a.webp 1x, /goit-dream-test/assets/eggplant-mobile@2x-cQYEFm-H.webp 2x"
-                src="/goit-dream-test/assets/eggplant-mobile-CeMgVp2a.webp"
-                alt="picture of eggplant"
-                width="280" 
-                height="240">
-            </picture>
-        </li>
-        <li class="vegetables-list-item">
-            <h3 class="vegetables-subtitle">leek</h3>
-            <p class="vegetables-list-text">50 USD / kg</p>
-            <picture>
-                <!-- Desktop -->
-                <source media="(min-width:1280px)"
-                srcset="/goit-dream-test/assets/leek-desktop-Cd94gWkH.webp 1x, /goit-dream-test/assets/leek-desktop@2x-DgzRYqWF.webp 2x">
+          <!-- Tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="/goit-dream-test/assets/eggplant-tablet-DaW973rB.webp 1x, /goit-dream-test/assets/eggplant-tablet@2x-Cq7aq26M.webp 2x"
+          />
 
-                <!-- Tablet -->
-                <source media="(min-width:768px)"
-                srcset="/goit-dream-test/assets/leek-tablet-CmxGZdOy.webp 1x, /goit-dream-test/assets/leek-tablet@2x-CkMEF3_K.webp 2x">
-                 
-                <img 
-                srcset="/goit-dream-test/assets/leek-mobile-BFi3atBr.webp 1x, /goit-dream-test/assets/leek-mobile@2x-BitK3qxz.webp 2x"
-                src="/goit-dream-test/assets/leek-mobile-BFi3atBr.webp"
-                alt="picture of leek"
-                width="280" 
-                height="240">
-            </picture>
-        </li>
-        <li class="vegetables-list-item">
-            <h3 class="vegetables-subtitle">mushrooms</h3>
-            <p class="vegetables-list-text">40 USD / kg</p>
-            <picture>
-                <!-- Desktop -->
-                <source media="(min-width:1280px)"
-                srcset="/goit-dream-test/assets/mushrooms-desktop-BISDLbd4.webp 1x, /goit-dream-test/assets/mushrooms-desktop@2x-DHi2DBOb.webp 2x">
+          <img
+            srcset="/goit-dream-test/assets/eggplant-mobile-CeMgVp2a.webp 1x, /goit-dream-test/assets/eggplant-mobile@2x-cQYEFm-H.webp 2x"
+            src="/goit-dream-test/assets/eggplant-mobile-CeMgVp2a.webp"
+            alt="picture of eggplant"
+            width="280"
+            height="240"
+          />
+        </picture>
+      </li>
+      <li class="vegetables-list-item">
+        <h3 class="vegetables-subtitle">leek</h3>
+        <p class="vegetables-list-text">50 USD / kg</p>
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="/goit-dream-test/assets/leek-desktop-Cd94gWkH.webp 1x, /goit-dream-test/assets/leek-desktop@2x-DgzRYqWF.webp 2x"
+          />
 
-                <!-- Tablet -->
-                <source media="(min-width:768px)"
-                srcset="/goit-dream-test/assets/mushrooms-tablet-GaLo0sJj.webp 1x, /goit-dream-test/assets/mushrooms-tablet@2x-B37e5pxK.webp 2x">
-                 
-                <img 
-                srcset="/goit-dream-test/assets/mushrooms-mobile-aI74kDfK.webp 1x, /goit-dream-test/assets/mushrooms-mobile@2x-BS9agdcE.webp 2x"
-                src="/goit-dream-test/assets/mushrooms-mobile-aI74kDfK.webp"
-                alt="picture of mushrooms"
-                width="280" 
-                height="240">
-            </picture>
-        </li>
-        <li class="vegetables-list-item">
-            <h3 class="vegetables-subtitle">corn</h3>
-            <p class="vegetables-list-text">60 USD / kg</p>
-            <picture>
-                <!-- Desktop -->
-                <source media="(min-width:1280px)"
-                srcset="/goit-dream-test/assets/corn-desktop-DSURk_w-.webp 1x, /goit-dream-test/assets/corn-desktop@2x-RRWTbYb9.webp 2x">
+          <!-- Tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="/goit-dream-test/assets/leek-tablet-CmxGZdOy.webp 1x, /goit-dream-test/assets/leek-tablet@2x-CkMEF3_K.webp 2x"
+          />
 
-                <!-- Tablet -->
-                <source media="(min-width:768px)"
-                srcset="/goit-dream-test/assets/corn-tablet-H7AJI-IB.webp 1x, /goit-dream-test/assets/corn-tablet@2x-DxqB1lyi.webp 2x">
-                 
-                <img 
-                srcset="/goit-dream-test/assets/corn-mobile-GPfb_16d.webp 1x, /goit-dream-test/assets/corn-mobile@2x-D7OMzuQT.webp 2x"
-                src="/goit-dream-test/assets/corn-mobile-GPfb_16d.webp"
-                alt="picture of corn"
-                width="280" 
-                height="240">
-            </picture>
-        </li>
-        <li class="vegetables-list-item">
-            <h3 class="vegetables-subtitle">sweet potatoes</h3>
-            <p class="vegetables-list-text">50 USD / kg</p>
-            <picture>
-                <!-- Desktop -->
-                <source media="(min-width:1280px)"
-                srcset="/goit-dream-test/assets/sweet-potatoes-desktop-CaDXG1ql.webp 1x, /goit-dream-test/assets/sweet-potatoes-desktop@2x-CpMKyul0.webp 2x">
+          <img
+            srcset="/goit-dream-test/assets/leek-mobile-BFi3atBr.webp 1x, /goit-dream-test/assets/leek-mobile@2x-BitK3qxz.webp 2x"
+            src="/goit-dream-test/assets/leek-mobile-BFi3atBr.webp"
+            alt="picture of leek"
+            width="280"
+            height="240"
+          />
+        </picture>
+      </li>
+      <li class="vegetables-list-item">
+        <h3 class="vegetables-subtitle">mushrooms</h3>
+        <p class="vegetables-list-text">40 USD / kg</p>
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="/goit-dream-test/assets/mushrooms-desktop-BISDLbd4.webp 1x, /goit-dream-test/assets/mushrooms-desktop@2x-DHi2DBOb.webp 2x"
+          />
 
-                <!-- Tablet -->
-                <source media="(min-width:768px)"
-                srcset="/goit-dream-test/assets/sweet-potatoes-tablet-Bi4vcdgD.webp 1x, /goit-dream-test/assets/sweet-potatoes-tablet@2x-DffvOJuZ.webp 2x">
-                 
-                <img 
-                srcset="/goit-dream-test/assets/sweet-potatoes-mobile-x0C0chvM.webp 1x, /goit-dream-test/assets/sweet-potatoes-mobile@2x-DxBDyW4E.webp 2x"
-                src="/goit-dream-test/assets/sweet-potatoes-mobile-x0C0chvM.webp"
-                alt="picture of sweet potatoes" 
-                height="240">
-            </picture>
-        </li>
-        <li class="vegetables-list-item">
-            <h3 class="vegetables-subtitle">carrot</h3>
-            <p class="vegetables-list-text">40 USD / kg</p>
-            <picture>
-                <!-- Desktop -->
-                <source media="(min-width:1280px)"
-                srcset="/goit-dream-test/assets/carrot-desktop-CfcuPsWt.webp 1x, /goit-dream-test/assets/carrot-desktop@2x-B_rvD9zU.webp 2x">
+          <!-- Tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="/goit-dream-test/assets/mushrooms-tablet-GaLo0sJj.webp 1x, /goit-dream-test/assets/mushrooms-tablet@2x-B37e5pxK.webp 2x"
+          />
 
-                <!-- Tablet -->
-                <source media="(min-width:768px)"
-                srcset="/goit-dream-test/assets/carrot-tablet-98796wWP.webp 1x, /goit-dream-test/assets/carrot-tablet@2x-Dv9C_fEI.webp 2x">
-                 
-                <img 
-                srcset="/goit-dream-test/assets/carrot-mobile-D73bn4TE.webp 1x, /goit-dream-test/assets/carrot-mobile@2x-BC2zwevJ.webp 2x"
-                src="/goit-dream-test/assets/carrot-mobile-D73bn4TE.webp"
-                alt="picture of carrot"
-                width="280" 
-                height="240">
-            </picture>
-        </li>
+          <img
+            srcset="/goit-dream-test/assets/mushrooms-mobile-aI74kDfK.webp 1x, /goit-dream-test/assets/mushrooms-mobile@2x-BS9agdcE.webp 2x"
+            src="/goit-dream-test/assets/mushrooms-mobile-aI74kDfK.webp"
+            alt="picture of mushrooms"
+            width="280"
+            height="240"
+          />
+        </picture>
+      </li>
+      <li class="vegetables-list-item">
+        <h3 class="vegetables-subtitle">corn</h3>
+        <p class="vegetables-list-text">60 USD / kg</p>
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="/goit-dream-test/assets/corn-desktop-DSURk_w-.webp 1x, /goit-dream-test/assets/corn-desktop@2x-RRWTbYb9.webp 2x"
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="/goit-dream-test/assets/corn-tablet-H7AJI-IB.webp 1x, /goit-dream-test/assets/corn-tablet@2x-DxqB1lyi.webp 2x"
+          />
+
+          <img
+            srcset="/goit-dream-test/assets/corn-mobile-GPfb_16d.webp 1x, /goit-dream-test/assets/corn-mobile@2x-D7OMzuQT.webp 2x"
+            src="/goit-dream-test/assets/corn-mobile-GPfb_16d.webp"
+            alt="picture of corn"
+            width="280"
+            height="240"
+          />
+        </picture>
+      </li>
+      <li class="vegetables-list-item">
+        <h3 class="vegetables-subtitle">sweet potatoes</h3>
+        <p class="vegetables-list-text">50 USD / kg</p>
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="/goit-dream-test/assets/sweet-potatoes-desktop-CaDXG1ql.webp 1x, /goit-dream-test/assets/sweet-potatoes-desktop@2x-CpMKyul0.webp 2x"
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="/goit-dream-test/assets/sweet-potatoes-tablet-Bi4vcdgD.webp 1x, /goit-dream-test/assets/sweet-potatoes-tablet@2x-DffvOJuZ.webp 2x"
+          />
+
+          <img
+            srcset="/goit-dream-test/assets/sweet-potatoes-mobile-x0C0chvM.webp 1x, /goit-dream-test/assets/sweet-potatoes-mobile@2x-DxBDyW4E.webp 2x"
+            src="/goit-dream-test/assets/sweet-potatoes-mobile-x0C0chvM.webp"
+            alt="picture of sweet potatoes"
+            width="280"
+            height="240"
+          />
+        </picture>
+      </li>
+      <li class="vegetables-list-item">
+        <h3 class="vegetables-subtitle">carrot</h3>
+        <p class="vegetables-list-text">40 USD / kg</p>
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="/goit-dream-test/assets/carrot-desktop-CfcuPsWt.webp 1x, /goit-dream-test/assets/carrot-desktop@2x-B_rvD9zU.webp 2x"
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="/goit-dream-test/assets/carrot-tablet-98796wWP.webp 1x, /goit-dream-test/assets/carrot-tablet@2x-Dv9C_fEI.webp 2x"
+          />
+
+          <img
+            srcset="/goit-dream-test/assets/carrot-mobile-D73bn4TE.webp 1x, /goit-dream-test/assets/carrot-mobile@2x-BC2zwevJ.webp 2x"
+            src="/goit-dream-test/assets/carrot-mobile-D73bn4TE.webp"
+            alt="picture of carrot"
+            width="280"
+            height="240"
+          />
+        </picture>
+      </li>
     </ul>
-    </div>
-  </section>
+  </div>
+</section>
 
       <section class="reviews-section" id="reviews">
     <div class="container reviews-container">
@@ -302,7 +365,7 @@
 </section>
 
       <!-- Секція Fresh Harvest Box -->
-<section class="your-order">
+<section class="your-order" id="shopNow">
   <div class="container">
     <h2 class="order-title">
       Fresh <span class="pink-span">Harvest</span> Box has got you covered
@@ -411,7 +474,11 @@
   <div class="container footer-container">
     <div class="footer-main-block">
       <div class="footer-logo-section">
-        <a class="footer-logo-link" href="../index.html">
+        <a
+          class="footer-logo-link"
+          href="/index.html"
+          aria-label="Go to homepage"
+        >
           <svg class="footer-icon" width="168" height="16">
             <use href="/goit-dream-test/assets/sprite-DPvE4Nhq.svg#icon-logo"></use>
           </svg>
@@ -479,7 +546,7 @@
                     <li class="mobile-menu-nav-item"><a href="#reviews" class="mobile-menu-nav-link">Reviews</a></li>
                 </ul>
             </nav>
-            <button type="button" class="mobile-menu-shop-btn">Shop now</button>
+            <a class="mobile-menu-shop-btn" href="#shopNow">Shop now</a>
         </div>
     </div>
 </div>
