@@ -1,5 +1,6 @@
 @media only screen and (min-width: 320px) {
   .how-it-works-section {
+    content-visibility:auto;
     background: linear-gradient(
       to bottom,
       #7a3145 calc(500px + 9vw),

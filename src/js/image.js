@@ -6,16 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
       let imageUrl;
       if (window.innerWidth >= 1280) {
         imageUrl = window.devicePixelRatio > 1
-          ? '../image/hero/retina/hero-desk@2x.webp'
-          : '../image/hero/hero-desk.webp';
+          ? './image/hero/retina/hero-desk@2x.webp'
+          : './image/hero/hero-desk.webp';
       } else if (window.innerWidth >= 768) {
         imageUrl = window.devicePixelRatio > 1
-          ? '../image/hero/retina/hero-tab@2x.webp'
-          : '../image/hero/hero-tab.webp';
+          ? './image/hero/retina/hero-tab@2x.webp'
+          : './image/hero/hero-tab.webp';
       } else {
         imageUrl = window.devicePixelRatio > 1
-          ? '../image/hero/retina/hero-mob@2x.webp'
-          : '../image/hero/hero-mob.webp';
+          ? 'image/hero/retina/hero-mob@2x.webp'
+          : 'image/hero/hero-mob.webp';
       }
   
       // Встановлення фонового зображення
