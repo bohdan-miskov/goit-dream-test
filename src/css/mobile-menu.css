@@ -1,4 +1,5 @@
 .backdrop{
+    content-visibility:auto;
     display: none;
 }
 
