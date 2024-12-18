@@ -19,9 +19,19 @@
       
     />
 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const fontLink = document.createElement('link');
+        fontLink.rel = 'stylesheet';
+        fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap';
+        document.head.appendChild(fontLink);
+      });
+    </script>
+<!-- 
     <link rel="preload" href="https://fonts.googleapis.com">
     <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="preload">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="preload"> -->
     <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap&font-display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet">
@@ -89,16 +99,7 @@
     <main>
       <section class="hero-section">
   <div class="container">
-    <h1 class="hero-title" style="
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 52px;
-      line-height: 100%;
-      letter-spacing: -0.015em;
-      text-transform: uppercase;
-      color: #fbfbfb;
-      margin-bottom: 20px;
-   " >organic vegetables to your diet today!</h1>
+    <h1 class="hero-title">organic vegetables to your diet today!</h1>
     <p" class="hero-descr">
       Our expertly curated vegetable baskets are made with the freshest, highest
       quality vegetables available. Fresh Harvest Box has got you covered.
